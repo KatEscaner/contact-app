@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Fragment } from "react";
 import ContactCard from "./ContactCard";
 
 const ContactList = (props) => {
@@ -14,9 +14,12 @@ const ContactList = (props) => {
         )
     })
     return(
-        <div className="ui celled list">
-            {renderContactList}
-        </div>
+        <Fragment>
+            <h2>Contact List</h2>
+            <div className="ui celled list">
+                {renderContactList}
+            </div>
+        </Fragment>
     )
 }
 

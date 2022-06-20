@@ -22,7 +22,6 @@ class AddContact extends React.Component {
     return (
       <div className="ui main">
         <br></br>
-        <br></br>
         <h2>Add Contact</h2>
         <form className="ui form" onSubmit={this.add}>
           <div className="field">
