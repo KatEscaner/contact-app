@@ -1,0 +1,29 @@
+{
+  "contacts": [
+    {
+      "id": "3d45fe0c-2a83-4fc8-8c6c-1966ed8c81a7",
+      "name": "escaner",
+      "email": "jjmateo1279@gmail.com"
+    },
+    {
+      "id": "810a3132-4686-49b6-8af9-aadaac722fa9",
+      "name": "juanjo",
+      "email": "boliche_1@hotmail.es"
+    },
+    {
+      "id": "4033781b-9114-4dbb-9b2d-96c6901b54d9",
+      "name": "dsad",
+      "email": "jjmateo1279@gmail.com"
+    },
+    {
+      "id": "bcc4e5a2-69a3-4a19-96ed-4e0abb368953",
+      "name": "juanjo",
+      "email": "boliche_1@hotmail.es"
+    },
+    {
+      "id": "cabdbba4-b97b-43f6-9405-cf3cc5956af5",
+      "name": "alvarolo",
+      "email": "lazaroyaesta@gmail.com"
+    }
+  ]
+}
