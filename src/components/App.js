@@ -11,7 +11,7 @@ import api from "../api/contacts";
 import EditContact from "./EditContact";
 
 function App() {
-  const LOCAL_STORAGE_KEY = "contacts";
+  // const LOCAL_STORAGE_KEY = "contacts";
   const [contacts, setContacts] = useState([]);
   const [searchTerm, setSearchTerm] = useState("");
   const [searchResults, setSearchResults] = useState([]);
@@ -109,13 +109,12 @@ else {
   ];
   const element = useRoutes(routes);
   return (
+
     <Fragment>
-      <br></br>
-      <br></br>
-      <br></br>
       <Header />
       {element}
     </Fragment>
+
   );
 }
 

@@ -14,17 +14,13 @@ const ContactDetail = (props) => {
 
   const customUser = (userImg) => {
     return (
-      <div className="main">
-        <div className="ui card center">
-          <div className="image">
-            <img src={userImg} alt="user" />
-          </div>
-          <div className="content">
-            <div className="header">{data.name}</div>
-            <div className="description">{data.email}</div>
+        <div className="max-w-sm rounded overflow-hidden shadow-lg bg-white mx-8 w-96">
+            <img src={userImg} alt="user" className="w-full"/>
+          <div className="px-6 py-4">
+            <div className="font-bold text-xl mb-2 text-[#991b1b]">{data.name}</div>
+            <div className="text-[fff] ">{data.email}</div>
           </div>
         </div>
-      </div>
     );
   };
   switch (data.name) {
