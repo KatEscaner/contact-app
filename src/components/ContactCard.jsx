@@ -11,8 +11,8 @@ const ContactCard = (props) => {
             <img className="w-8 h-8 rounded-full" src={user} alt="user"/>
                 <div className="flex-1 min-w-0">
                     <Link to={`/contact/${id}`} state={props.contact}>
-                        <div className="text-sm font-medium text-gray-900 truncate dark:text-white">{name}</div>
-                        <div className="text-sm text-gray-500 truncate dark:text-gray-400">{email}</div>
+                        <div className="text-xl font-medium text-gray-900 truncate dark:text-white">{name}</div>
+                        <div className="text-lg text-gray-500 truncate dark:text-gray-400">{email}</div>
                     </Link>
                 </div>
                 <div className="flex">

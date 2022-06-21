@@ -14,7 +14,7 @@ const ContactDetail = (props) => {
 
   const customUser = (userImg) => {
     return (
-        <div className="max-w-sm rounded overflow-hidden shadow-lg bg-white mx-8 w-96">
+        <div className="max-w-sm rounded overflow-hidden shadow-lg bg-white  w-96 m-auto">
             <img src={userImg} alt="user" className="w-full"/>
           <div className="px-6 py-4">
             <div className="font-bold text-xl mb-2 text-[#991b1b]">{data.name}</div>
@@ -23,31 +23,45 @@ const ContactDetail = (props) => {
         </div>
     );
   };
-  switch (data.name) {
-    case "Alvarolo":
-      return customUser(userAlvProf);
-      break;
 
-    case "Cristinuki":
-      return customUser(userCristinukiProf);
-      break;
+  const nameCustomUser = [
+    {
+      name: "Alvarolo",
+      icon: userAlvProf
+    },
+    {
+      name: "Cristinuki",
+      icon: userCristinukiProf
+    },
+    {
+      name: "Julio",
+      icon: userJulioProf
+    },
+    {
+      name: "Escaner",
+      icon: userEscanerProf
+    },
+    {
+      name: "Llatzer",
+      icon: userLlatzerProf
+    }
+  ]
+  
+    let currentIcon = ''
 
-    case "Julio":
-      return customUser(userJulioProf);
-      break;
-
-    case "Escaner":
-      return customUser(userEscanerProf);
-      break;
-
-      case "Llatzer":
-        return customUser(userLlatzerProf);
-        break;
-        
-    default:
-      return customUser(userProf);
-      break;
+    nameCustomUser.forEach((user) =>{
+      if(user.name == data.name){
+        currentIcon = user.icon
+      }
+    })
+  
+  if(currentIcon !== ''){
+    return customUser(currentIcon)
+  } else {
+    return customUser(userProf)
   }
+  
+  
 };
 
 export default ContactDetail;
