@@ -6,6 +6,8 @@ import userCristinukiProf from "../images/cristinuki.png";
 import userJulioProf from "../images/julio.png";
 import userEscanerProf from "../images/escaner.png";
 import userLlatzerProf from "../images/llatzer.png";
+import userDavidProf from "../images/david.png"
+import userChenProf from "../images/chen.jpg"
 
 const ContactDetail = (props) => {
   const location = useLocation();
@@ -44,6 +46,14 @@ const ContactDetail = (props) => {
     {
       name: "Llatzer",
       icon: userLlatzerProf
+    },
+    {
+      name: "David",
+      icon: userDavidProf
+    },
+    {
+      name: "Chen",
+      icon: userChenProf
     }
   ]
   
