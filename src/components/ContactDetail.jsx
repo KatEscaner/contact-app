@@ -1,5 +1,5 @@
 import React from "react";
-import userProf from "../images/user.jpg";
+import userProf from "../images/guest.png";
 import { useLocation } from "react-router-dom";
 import userAlvProf from "../images/alvarolo.png";
 import userCristinukiProf from "../images/cristinuki.png";
